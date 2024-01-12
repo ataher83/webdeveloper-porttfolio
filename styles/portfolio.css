@@ -15,6 +15,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
+    margin-bottom: 5px;
 }
 
 .section-title{
@@ -190,7 +191,10 @@ footer{
 .footer-column{
     width: 50%;
 }
-
+.social-links{
+    display: flex;
+    justify-content: center;
+}
 .social-links a{
     margin-right: 25px;
 }
@@ -204,4 +208,102 @@ footer{
     background: #fff;
     border: 0;
     width: 100%;
+}
+
+/* temp */
+.tmp-hide{
+    display: none;
+}
+
+/* mobile devices */
+@media screen and (max-width:576px) {
+    #what-i-do-description {
+        padding: 20px;
+    }
+    .skills-container {
+        flex-direction: column;
+    }
+    .resume-container {
+        flex-direction: column;
+        margin: 5%;
+    }
+    footer {
+        gap: 20px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        width: 80%;
+    }
+    .about {
+        padding: 20px;
+        margin: 100px 0;
+    }
+    .about-info-container {
+        flex-direction: column;
+    }
+
+    .header {
+        background-image: none;
+    }
+    nav {
+        flex-direction: column;
+        margin: 0;
+    }
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+}
+
+/* tab devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    #what-i-do-description {
+        padding: 30px;
+    }
+    .skills-container {
+        gap: 10px;
+    }
+    .resume-container {
+        margin-left: 3%;
+    }
+    footer{
+        display: flex;
+        gap: 50px;
+        padding: 100px 50px;
+    }
+    .contact input[type="text"], .contact input[type="email"], textarea {
+        width: 85%;
+    }
+    .about {
+        padding: 30px;
+        margin: 100px 0;
+    }
+
+
+
+    .header {
+        background-image: none;
+    }
+    nav {
+        flex-direction: column;
+        margin: 0;
+    }
+    nav > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner {
+        padding: 20px;
+        flex-direction: column;
+    }
+
 }
